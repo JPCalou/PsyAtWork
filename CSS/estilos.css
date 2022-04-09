@@ -1,7 +1,7 @@
 
 /*header y footer*/
 body{
-    background-color:beige;
+    background:linear-gradient(#3c9687,beige);
     margin: 0px;
     
 }
@@ -14,11 +14,16 @@ header{
     grid-template-areas:
     "logo titulo buscar menu";
     align-items: baseline;
-    
+    border-bottom: 3px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: beige;
+    border-style: groove;
 
 
     height: 140px;
-    background-color: #3c9687;
+   /* background-color: #3c9687;*/
      
    
 }
@@ -30,12 +35,16 @@ header{
     grid-area: logo;
     height: 100px;
     width: 100px;
-    
+   
     justify-self:center;
     align-self: center;
+    transition: all 2s;
 
 }
-
+.logo:hover{
+    transform: scale(1.1);
+    border-radius: 100px;
+}
 .buscar{
     display: flex;
     grid-area: buscar;
@@ -58,11 +67,12 @@ h1{
     color: beige;
     grid-area: titulo;
     font-size: 24px;
-        
+    transition: all 1s;
     align-self: center;
     justify-self: center;
-    
-    
+    }
+h1:hover{
+color:  rgb(12, 102, 236);
 }
 
 .menu{
@@ -72,9 +82,10 @@ h1{
    
 
 }
+
 .menu li {
     display: inline-block;
-   
+    
     
     margin: 3px;
     
@@ -83,13 +94,26 @@ h1{
 }
 .menu li a{
     text-decoration: none;
-
+    color: black;
+    background-color: beige;
+    transition: all 1s;
+    
+}
+.menu li a:hover{
+    color: rgb(12, 102, 236);
+    
 }
 
 
 footer{
-    background-color: #37a38f;
+   /* background-color: #37a38f;*/
     grid-area: footer;
+    border-top: 3px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: groove;
+    border-color: beige;
         
 }
 
@@ -118,7 +142,7 @@ footer{
     height: 80%;
 }
 
-#main{
+.main{
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
     grid-area: main;
@@ -129,8 +153,13 @@ footer{
     border: 5px;
     border-style: groove;
     border-radius: 15px;
-    overflow: auto;  
+    overflow: hidden;  
+    transition: all 2s;
   
+}
+.main:hover{
+    height: 110% ;
+    border-radius: 15px;
 }
 
 
@@ -150,6 +179,7 @@ footer{
 .servicios{
     display: flex;
     flex-direction: row;
+    margin-bottom: 17px;
     
    
 
@@ -170,12 +200,18 @@ h3{
     margin-right: 20px;
     margin-left: 20px;
     justify-self: center;
-
+   
+    
 }
 
 .img1{
     height: 214px;
     width: 233px;
+    border-radius: 50%;
+   transition: all 2s;
+}
+.img1:hover{
+    transform: scale(1.1);
     border-radius: 50%;
 }
 
@@ -190,7 +226,8 @@ h3{
     padding-left: 50px;
     border-radius: 70px;
     align-self: flex-end;
-    border: groove;
+    background-color: beige;
+
 }
 
 /*Nosotros*/
@@ -274,7 +311,7 @@ h3{
         
             }
   /*media quires mobile*/
-    @media screen and (max-width: 480px){
+@media screen and (max-width: 425px){
        body{
            margin: 0px;
        }
@@ -320,32 +357,33 @@ h3{
         }
         #main{
             height: 243px;
-            width: 423px;
+            width: 401px;
         }
 /*media quires servicios*/
 
        .div__img1{
         margin-right: 10px;
         margin-left: 10px;
+        align-items: center;
        }
        h3{
         font-size: 14px;
-        align-self: stretch;
+        align-self: center;
         text-align: center;
        }
        .img1{
-        height: 130px;
-        width: 150px;
+        height: 113px;
+        width: 110px;
        }
        .p__servicios{
-        width: 285px;
-        height: 128px;
+        width: 188px;
+        height: 120px;
         font-size: 11px;
         overflow: auto;
         text-align: center;
         border-radius: 53px;
-        margin-top: 36px;
-        padding: 1px;
+        margin-right: 4px;
+        margin-left: 4px;
         }
     }
 
