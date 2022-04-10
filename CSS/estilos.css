@@ -53,6 +53,17 @@ header{
     justify-self:center;
         
 }
+.buscar_texto{
+    height: 24px;
+    width: 111px;
+}
+
+.boton_buscar{
+    height: 24px;
+    width: 54px;
+    font-size: small;
+    text-align: center;
+}
 nav{
     align-self: center;
     display: flex;
@@ -69,7 +80,7 @@ h1{
     font-size: 24px;
     transition: all 1s;
     align-self: center;
-    justify-self: center;
+    justify-content: center;
     }
 h1:hover{
 color:  rgb(12, 102, 236);
@@ -77,7 +88,7 @@ color:  rgb(12, 102, 236);
 
 .menu{
     display: inline-block;
-    padding: 5px;
+    
     align-self: flex-end;
    
 
