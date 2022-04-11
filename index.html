@@ -11,31 +11,53 @@
     
 </head>
 <body class="container-fluid">
-    <header class="row">
-        <img src="./multimedia/logo.jpg" alt="Logo" class="logo col-lg-3">
+    <header class="row justify-content-evenly">
+        <img src="./multimedia/logo.jpg" alt="Logo" class="logo col-lg-4">
 
-        <h1 class="col-lg-3">Pychology @ Work</h1>
-        <div class="buscar col-lg-2">
+        <h1 class="col-lg-6">Pychology @ Work</h1>
+        <!-- <div class="buscar col-lg-2">
             <input type="text" placeholder="Buscar" class="buscar_texto" >
             <input type="submit" class="boton_buscar">
-        </div>
+        </div> -->
 
      
-        <nav class="col-lg-4">
-            <ul class="menu ">
-                <li ><button><a href="../Primera entrega/index.html"><strong>Home</strong></a></button></li>
-                    <li ><button><a href="../Primera entrega/Paginas/Nosotros.html"><strong>Nosotros</strong></a></button></li>
-                    <li ><button><a href="../Primera entrega/Paginas/Servicios.html"><strong>Servicios</strong></a></button></li>
-                    <li ><button><a href="../Primera entrega/Paginas/Capacitaciones.html"><strong>Capacitaciones</strong></a></button></li>
-                    <li><button><a href="../Primera entrega/Paginas/Contacto.html"><strong>Contacto</strong></a></button></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Paginas/Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Paginas/Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Paginas/Capacitaciones.html" >
+                      Capacitaciones
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Paginas/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
      
     </header>
 
-    <section class="index__section row">
+    <section class="index__section row justify-content-around">
         
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KVakLLMBQxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__presentacion col-6"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KVakLLMBQxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__presentacion col-6" ></iframe>
 
         <main class="main col-6">ES es un proyecto mediante el cual se incrementa y mantiene el compromiso, la motivación, el sentido de pertenencia y el sentido del trabajo mediante la aplicación de diferentes herramientas como la formación, el uso de dinámicas psicológicas y la creación de esquemas de trabajo. Esta idea fue especialmente diseñada para trabajos de tipo remoto o híbrido, aunque también se puede utilizar en trabajos presenciales cuando sea necesario. ES se creó después de analizar las luchas de las empresas para mantener la motivación de sus empleados y la calidad del trabajo durante la pandemia COVID - 19, en la que la mayoría de los trabajos que normalmente era presenciales tuvieron que volverse remotos y por ello toda la estructura y organización de la la empresa y los recursos humanos tuvieron que redefinirse.</main>
 
@@ -50,6 +72,6 @@
         <p class="col-4">"Mail: PAW@hotmail.com"</p>
     </footer>
 
-    <script src="../Primera entrega/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
