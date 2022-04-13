@@ -268,7 +268,8 @@ h3{
     nav{
         display: flex;
         flex-direction: column;
-        justify-self: center;
+        justify-self: start;
+
     }
     
     .menu{
@@ -298,16 +299,25 @@ h3{
         .sec__servicios{
         margin-right: 0px;
         margin-left: 0px;
-        
+       
+        }
+        .div__img1{
+            align-items: center;
         }
         .img1{
-            height: 185px;
-            width: 202px;
+            height: 162px;
+            width: 154px;
         }
         .p__servicios{
             margin-top: 64px;
-            width: 350px;
+            width: 322px;
         }
+       #lideres{
+           flex-direction: row;
+       }
+       #psicotecnicos{
+           flex-direction: row;
+       }
         
             }
   /*media quires mobile*/
@@ -341,6 +351,10 @@ h3{
             justify-self: flex-start;
             align-self: center;
             order: 1;
+            
+        }
+        .buscar_texto{
+            width: 100px;
         }
         .boton__enviar{
             font-size: 12px;
@@ -350,7 +364,7 @@ h3{
             flex-direction: column;
             align-self: center;
             justify-self: center;
-            width: 175px;
+            width: 135px;
         }
         .video__presentacion{
             height: 250px;
@@ -360,7 +374,21 @@ h3{
             width: 401px;
         }
 /*media quires servicios*/
+        .sec__servicios{
+            justify-items: center;
+        }        
 
+        .servicios{
+            flex-direction: column;
+            width: 320px;
+        }
+        #lideres{flex-direction: column;
+
+        }
+        #psicotecnicos{
+            flex-direction: column;
+
+        }
        .div__img1{
         margin-right: 10px;
         margin-left: 10px;
@@ -376,14 +404,15 @@ h3{
         width: 110px;
        }
        .p__servicios{
-        width: 188px;
-        height: 120px;
-        font-size: 11px;
+        width: 164px;
+        height: 183px;
+        font-size: 13px;
         overflow: auto;
         text-align: center;
         border-radius: 53px;
-        margin-right: 4px;
+        margin-right: 25px;
         margin-left: 4px;
+        margin-top: 13px;
         }
     }
 
