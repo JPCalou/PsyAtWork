@@ -5,56 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
-    <header>
-        <img src="../multimedia/logo.jpg" alt="Logo" class="logo">
+    <header class="row justify-content-between">
+        <img src="../multimedia/logo bauti.jpeg" alt="Logo" class="logo col-lg-6">
 
-        <h1>Nosotros</h1>
-        <div class="buscar">
-            <input type="text" placeholder="Buscar" >
-            <input type="submit">
-        </div>
+        <h1 class="col-lg-6">Nosotros</h1>
+        
 
      
-        <nav>
-            <ul class="menu">
-                <li ><button><a href="../index.html"><strong>Home</strong></a></button></li>
-                <li ><button><a href="../Paginas/Nosotros.html"><strong>Nosotros</strong></a></button></li>
-                <li ><button><a href="../Paginas/Servicios.html"><strong>Servicios</strong></a></button></li>
-                <li ><button><a href="../Paginas/Capacitaciones.html"><strong>Capacitaciones</strong></a></button></li>
-                <li><button><a href="../Paginas/Contacto.html"><strong>Contacto</strong></a></button></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " href="./Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Capacitaciones.html" >
+                      Capacitaciones
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <section class="sec__nosotros">
-        <article class="servicios">
+    <section class="sec__nosotros row justify-content-around">
+        <article class="servicios col-lg-3">
             <div class="div__img1">
                 <img src="../multimedia/psicologa.jpg" alt="psicologa" class="img1">
                 <h4 id="t__psicologa">Lic. Luz Trigo</h4>
+                <ul>
+                    <li>Licenciada en Psicologia</li>
+                    <li>CEO de Psychology at Work</li>
+                </ul>
             </div>
+            
         </article>
         
-        <article class="servicios">
+        <article class="servicios col-lg-3">
             <div class="div__img1">
                 <img src="../multimedia/Nutricionista.webp" alt="Nutricionista" class="img1">
                 <h4>Lic. Melina Cardozo</h4>
+                <ul>
+                    <li>Licenciada en Nutricion</li>
+                    <li>Especialista en Nutricion Vegana</li>
+                </ul>
             </div>
         </article>
 
-        <article class="servicios">
+        <article class="servicios col-lg-3">
             <div class="div__img1">
                 <img src="../multimedia/entrenador.jpg" alt="Entrenador" class="img1">
                 <h4>Prof. Luciano Combes</h4>
+                <ul>
+                    <li>Profesor Nacional de Educacion Fisica</li>
+                    <li>Licenciado en Kinesiologia y Fisiatria</li>
+                </ul>
             </div>
         </article>
 
-        <article class="servicios">
+        <article class="servicios col-lg-3">
             <div class="div__img1">
                 <img src="../multimedia/coaching.jpg" alt="Coaching" class="img1">
                 <h4>Coach Marina Terrada</h4>
+                <ul>
+                    <li>Certificacion en Coaching Laboral</li>
+                    <li>Coach de Psychology at Work</li>
+                </ul>
             </div>
         </article>
 
@@ -62,11 +99,11 @@
 
 
      <!--Footer-->
-     <footer>
-        <h3>Contacto</h3>
-        <p>"Whatsapp: 11-4567-8922" 
-        </p>
-        <p>"Mail: PAW@hotmail.com"</p>
+     <footer class="footer row">
+        <h3 class="col-4">Contacto</h3>
+        <p class="col-4">"Whatsapp: 11-4567-8922" </p>
+        <p class="col-4">"Mail: PAW@hotmail.com"</p>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

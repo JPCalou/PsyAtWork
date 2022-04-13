@@ -38,6 +38,7 @@ header{
     width: 140px;
     margin-top: 7px;
     margin-bottom: 7px;
+    
     justify-self:center;
     align-self: center;
     transition: all 2s; 
@@ -190,7 +191,7 @@ h3{
 }
 
 .p__servicios{
-    font-family: cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -204,12 +205,42 @@ h3{
 
 }
 
+/* Capacitaciones */
+
+.sec_capacitaciones{
+    display: grid;
+    padding: 15px;
+    grid-template-columns:repeat(3, 1fr);
+    justify-content: inherit;
+}
+.capacitaciones{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+    align-items: center;
+}
+.img2{
+    height: 214px;
+    width: 233px;
+    border-radius: 50%;
+   transition: all 2s;
+}
+.div_img2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-self: center;
+    align-items: center;
+}
+
 /*Nosotros*/
 
 .sec__nosotros{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    margin: 20px;
     
 }
 /* Contacto */
@@ -320,7 +351,7 @@ h3{
             flex-direction: column;
             flex-wrap: wrap;
         
-            height: 216px;
+            height: 254px;
         }
         .logo{
             height: 81px;
@@ -336,31 +367,38 @@ h3{
             font-size: 28px;
             align-self: center;
         }
-        .buscar{
+        /* .buscar{
             justify-self: flex-start;
             align-self: center;
             order: 1;
             
-        }
-        .buscar_texto{
+        } */
+        /* .buscar_texto{
             width: 100px;
         }
         .boton__enviar{
             font-size: 12px;
-        }
-        nav{
+        } */
+        /* nav{
             display: flex;
             flex-direction: column;
             align-self: center;
             justify-self: center;
             width: 135px;
+        } */
+        footer{
+            justify-content: flex-start;
+            text-align: start;
         }
+
+        /* Media index */
         .video__presentacion{
             height: 250px;
         }
-        #main{
+        .main{
             height: 243px;
             width: 401px;
+            margin-top: 10px;
         }
 /*media quires servicios*/
         .sec__servicios{
@@ -402,6 +440,22 @@ h3{
         margin-right: 25px;
         margin-left: 4px;
         margin-top: 13px;
+        }
+
+        /* Media contactos */
+
+        /* .sec_contacto{
+            flex-direction: row;
+        } */
+
+        .div__contacto{
+            width: 100px;
+            height: 100px;
+        }
+
+        .img_contacto{
+            width: 100px;
+            height: 100px;
         }
     }
 
