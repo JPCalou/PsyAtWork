@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
-<body>
+<body class="conntainer-fluid" >
      <!-- Encabezado-->
-     <header>
-        <img src="../multimedia/logo.jpg" alt="Logo" class="logo">
+     <header class="row justify-content-evenly">
+        <img src="../multimedia/logo.jpg" alt="Logo" class="logo col-lg-6">
 
+<<<<<<< HEAD
         <h1>Servicios</h1>
         <div class="buscar">
             <input type="text" placeholder="Buscar" class="buscar_texto" >
@@ -28,10 +30,47 @@
                 <li><button><a href="./Contacto.html"><strong>Contacto</strong></a></button></li>
         </ul>
     </nav>
+=======
+        <h1 class="col-lg-6">Servicios</h1>
+        
+
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Capacitaciones.html" >
+                      Capacitaciones
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+>>>>>>> probandoBootstrap
      
     </header>
     
-        <section class="sec__servicios">
+        <section class="sec__servicios ">
 
             <article id="sesionesDeCompromiso" class="servicios" >
                 <div class="div__img1" id="div1">
@@ -75,11 +114,11 @@
         </section>
 
 <!--Footer-->
-     <footer class="footer">
-        <h3>Contacto</h3>
-        <p>"Whatsapp: 11-4567-8922" 
-        </p>
-        <p>"Mail: PAW@hotmail.com"</p>
-    </footer>
+<footer class="footer row">
+    <h3 class="col-4">Contacto</h3>
+    <p class="col-4">"Whatsapp: 11-4567-8922" </p>
+    <p class="col-4">"Mail: PAW@hotmail.com"</p>
+</footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

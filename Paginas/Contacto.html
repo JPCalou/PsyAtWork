@@ -5,60 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
-<body>
-    <header>
-        <img src="../multimedia/logo.jpg" alt="Logo" class="logo">
+<body class="container-fluid">
+    <header class="row justify-content-evenly">
+        <img src="../multimedia/logo.jpg" alt="Logo" class="logo col-lg-6">
 
-        <h1>Contacto</h1>
-        <div class="buscar">
-            <input type="text" placeholder="Buscar" >
-            <input type="submit">
-        </div>
+        <h1 class="col-lg-6">Servicios</h1>
+        
 
      
-        <nav>
-            <ul class="menu">
-                <li ><button><a href="../index.html"><strong>Home</strong></a></button></li>
-                <li ><button><a href="../Paginas/Nosotros.html"><strong>Nosotros</strong></a></button></li>
-                <li ><button><a href="../Paginas/Servicios.html"><strong>Servicios</strong></a></button></li>
-                <li ><button><a href="../Paginas/Capacitaciones.html"><strong>Capacitaciones</strong></a></button></li>
-                <li><button><a href="../Paginas/Contacto.html"><strong>Contacto</strong></a></button></li>
-            </ul>
-        </nav>
-        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Capacitaciones.html" >
+                      Capacitaciones
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+     
     </header>
+    <section class="sec_contacto row justify-content-around">
 
-        <div class="div__contacto">
-            <img src="../multimedia/contacto.png" alt="contacto" id="contacto">
+        <div class="div__contacto col-lg-6">
+            <img src="../multimedia/contacto 2.jpg" alt="contacto" class="img_contacto">
         </div>
-     <!--Formulario-->
+        <div class="form_contacto col-6">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            </div>
 
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+    </section>
 
-     <form class="formulario">
-         
-         <input type="text" placeholder="Nombre y Apellido" id="form__nombre" name="nombre">
-         
-        
-         <input type="email" placeholder="Email" id="form__email" name="email">
-         
-         
-         <textarea name="Mensaje" id="form__mensaje" cols="30" rows="10" placeholder="Mensaje" >
-
-
-         </textarea>
-         <!--Boton de enviar-->
-         <input type="submit">
-        </main>
-     </form>
      <!--Footer-->
-     <footer>
-        <h3>Contacto</h3>
-        <p>"Whatsapp: 11-4567-8922" 
-        </p>
-        <p>"Mail: PAW@hotmail.com"</p>
+     <footer class="footer row">
+        <h3 class="col-4">Contacto</h3>
+        <p class="col-4">"Whatsapp: 11-4567-8922" </p>
+        <p class="col-4">"Mail: PAW@hotmail.com"</p>
     </footer>
+        <script src="../js/bootstrap.min.js"></script>
     
 </body>
 

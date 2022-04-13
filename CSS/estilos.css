@@ -7,22 +7,23 @@ body{
 }
 
 header{
-    grid-area: header;
+    /* grid-area: header;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     
     grid-template-areas:
     "logo titulo buscar menu";
-    align-items: baseline;
+    align-items: baseline;*/
     border-bottom: 3px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-color: beige;
-    border-style: groove;
+    border-style: groove; 
+    transition: all 1s;
 
 
-    height: 140px;
+    /* height: 140px; */
    /* background-color: #3c9687;*/
      
    
@@ -30,90 +31,61 @@ header{
  
 
 .logo{
-    border-radius: 100px;
-    display: flex;
-    grid-area: logo;
-    height: 100px;
-    width: 100px;
-   
+     border-radius: 100px;
+    /*display: flex;
+    grid-area: logo;*/
+    height: 130px;
+    width: 140px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     justify-self:center;
     align-self: center;
-    transition: all 2s;
+    transition: all 2s; 
 
 }
 .logo:hover{
     transform: scale(1.1);
     border-radius: 100px;
 }
-.buscar{
-    display: flex;
-    grid-area: buscar;
-    
-    align-self: center;
-    justify-self:center;
-        
-}
+
+
+
+
 nav{
     align-self: center;
-    display: flex;
-    grid-area: menu;
+    /* display: flex;
+    grid-area: menu; */ 
 }
     
 h1{ 
    
-    display:flex;
+    /* display:flex;
     font-size: 24px;
     font-family:'Times New Roman', Times, serif;
     color: beige;
-    grid-area: titulo;
-    font-size: 24px;
+    grid-area: titulo;*/
+    
     transition: all 1s;
     align-self: center;
-    justify-self: center;
+    justify-content: center; 
+    text-align: center;
     }
 h1:hover{
 color:  rgb(12, 102, 236);
 }
 
-.menu{
-    display: inline-block;
-    padding: 5px;
-    align-self: flex-end;
-   
-
-}
-
-.menu li {
-    display: inline-block;
-    
-    
-    margin: 3px;
-    
-    
-   
-}
-.menu li a{
-    text-decoration: none;
-    color: black;
-    background-color: beige;
-    transition: all 1s;
-    
-}
-.menu li a:hover{
-    color: rgb(12, 102, 236);
-    
-}
 
 
 footer{
    /* background-color: #37a38f;*/
-    grid-area: footer;
+     /* grid-area: footer; */
     border-top: 3px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
     border-style: groove;
-    border-color: beige;
+    border-color: beige; 
+    padding: 20px;
         
 }
 
@@ -121,35 +93,36 @@ footer{
 /*index*/
 
 .index__section{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr,1fr;
     grid-template-rows: 1fr,1fr;
     grid-template-areas:
     "presentacion main"
     "presentacion main";
-    justify-content:space-around;
+    justify-content:space-around;*/
     padding: 26px;
     
-    align-items: center;
+   /* align-items: center; */
+
    
 }
 
 .video__presentacion{
-    grid-area: presentacion;
+    /* grid-area: presentacion;*/
     border: black;
     border-radius: 44px;
     width: 453px;
-    height: 80%;
+    height: 300px; 
 }
 
 .main{
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    grid-area: main;
+    /* font-style: italic; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* grid-area: main;*/
     justify-self: center;
     align-self: center;
-    height: 80%;
-    width: 60%;
+    height: 300px;
+    width: 450px; 
     border: 5px;
     border-style: groove;
     border-radius: 15px;
@@ -158,7 +131,7 @@ footer{
   
 }
 .main:hover{
-    height: 110% ;
+    height: 380px ;
     border-radius: 15px;
 }
 
@@ -169,7 +142,7 @@ footer{
 
 .sec__servicios{
     display: grid;
-    
+    padding: 15px;
     grid-template-rows:repeat(4, 1fr);
     justify-content: inherit;
    
@@ -200,6 +173,7 @@ h3{
     margin-right: 20px;
     margin-left: 20px;
     justify-self: center;
+    align-items: center;
    
     
 }
@@ -222,9 +196,9 @@ h3{
     align-content: center;
     height: 169px;
     width: 405px;
-    padding-right: 50px;
+     padding-right: 50px;
     padding-left: 50px;
-    border-radius: 70px;
+    border-radius: 70px; 
     align-self: flex-end;
     background-color: beige;
 
@@ -238,7 +212,22 @@ h3{
     grid-template-rows: 1fr 1fr;
     
 }
+/* Contacto */
+.div__contacto{
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
 
+.img_contacto{
+    border-radius: 50px;
+    height: 350px;
+    width: 450px;
+    
+}
+.sec_contacto{
+    padding: 15px;
+}
 /*media quires tablet*/
 
 @media screen and (max-width: 768px){
