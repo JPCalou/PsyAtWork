@@ -428,6 +428,9 @@ h3{
             width: 401px;
             margin-top: 10px;
         }
+        .main:hover{
+            height: 593px;
+        }
         /*mobile servicios*/
         .sec__servicios{
             justify-items: center;
@@ -436,7 +439,7 @@ h3{
         .servicios{
             flex-direction: column;
             width: 320px;
-            height: 400px;
+            height: 513px;
         }
         #lideres{flex-direction: column;
 
@@ -462,7 +465,7 @@ h3{
        }
        .p__servicios{
         width: 295px;
-        height: 183px;
+        height: 276px;
         font-size: 13px;
         overflow: auto;
         text-align: justify;
@@ -470,7 +473,7 @@ h3{
         margin-right: 25px;
         margin-left: 4px;
         margin-top: 13px;
-        padding-top: 110px;
+        padding-top: 0px
         }
 
         /* Media contactos */
