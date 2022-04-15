@@ -133,10 +133,10 @@ footer{
     transition: all 2s;
   
 }
-.main:hover{
+/* .main:hover{
     height: 380px ;
     border-radius: 15px;
-}
+} */
 
 
 
@@ -163,6 +163,7 @@ footer{
 h3{
     align-self: center;
 }
+
 #lideres{
     flex-direction: row-reverse;
 }
@@ -198,12 +199,16 @@ h3{
     flex-wrap: wrap;
     align-content: center;
     height: 169px;
-    width: 405px;
-     padding-right: 50px;
-    padding-left: 50px;
+    width: 560px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 70px; 
     align-self: flex-end;
     background-color: beige;
+    overflow: hidden;
+    
 
 }
 
@@ -312,11 +317,15 @@ h3{
         width: 60%;
         margin-bottom: 10px;
     }
-    #main{
+    .main{
         height: 50%;
         width: 60%;
         margin-top: 15px;
     }
+    .main:hover{
+        height: auto;
+    }
+
     /*tablet servicios*/
     
         .sec__servicios{
@@ -324,19 +333,32 @@ h3{
         margin-left: 0px;
        
         }
+        .servicios{
+            height: 220px;
+            justify-content: center;
+        }
         .div__img1{
             align-items: center;
+            width: 290px;
         }
         .img1{
             height: 162px;
             width: 154px;
         }
         .p__servicios{
-            margin-top: 64px;
-            width: 322px;
+            
+            width: 415px;
+            height: 189px;
+            text-align: justify;
+            padding-top: 5rem;
+            padding-bottom: 1rem;
+            overflow: auto;
+            transition: all 2s;
         }
+        
        #lideres{
            flex-direction: row;
+           
        }
        #psicotecnicos{
            flex-direction: row;
@@ -363,6 +385,7 @@ h3{
             justify-self: center;
             align-self: center;
             margin-top: 20px;
+            margin-left: 10px;
         }
         h1{
             height: 35px;
@@ -395,7 +418,7 @@ h3{
             text-align: start;
         }
 
-        /* Media index */
+        /* Mobile index */
         .video__presentacion{
             height: 250px;
             width: 270px;
@@ -405,7 +428,7 @@ h3{
             width: 401px;
             margin-top: 10px;
         }
-/*media quires servicios*/
+        /*mobile servicios*/
         .sec__servicios{
             justify-items: center;
         }        
@@ -413,6 +436,7 @@ h3{
         .servicios{
             flex-direction: column;
             width: 320px;
+            height: 400px;
         }
         #lideres{flex-direction: column;
 
@@ -423,28 +447,30 @@ h3{
         }
        .div__img1{
         margin-right: 10px;
+        margin-top: 40px;
         margin-left: 10px;
         align-items: center;
        }
        h3{
-        font-size: 14px;
+        font-size: 19px;
         align-self: center;
         text-align: center;
        }
        .img1{
-        height: 113px;
-        width: 110px;
+        height: 123px;
+        width: 120px;
        }
        .p__servicios{
-        width: 164px;
+        width: 295px;
         height: 183px;
         font-size: 13px;
         overflow: auto;
-        text-align: center;
+        text-align: justify;
         border-radius: 53px;
         margin-right: 25px;
         margin-left: 4px;
         margin-top: 13px;
+        padding-top: 110px;
         }
 
         /* Media contactos */
