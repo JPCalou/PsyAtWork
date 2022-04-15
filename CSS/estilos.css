@@ -56,7 +56,9 @@ nav{
     align-self: center;
     /* display: flex;
     grid-area: menu; */ 
+    
 }
+
     
 h1{ 
    
@@ -264,19 +266,19 @@ h3{
 @media screen and (max-width: 768px){
 
     header{
-        height: 182px;
-        grid-template-columns: 1fr 1fr 1fr;
+        height: 253px;
+        /* grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "logo none menu"
-            "titulo buscar menu";
+            "titulo buscar menu"; */
     }
     .logo{
       margin-top: 13px;
     }
     h1{
         display: flex;
-        font-size: 23px;
+        font-size: 30px;
         
         text-align:initial;
     }
@@ -308,6 +310,7 @@ h3{
     .video__presentacion{
         height: 250px;
         width: 60%;
+        margin-bottom: 10px;
     }
     #main{
         height: 50%;
@@ -347,11 +350,11 @@ h3{
        }
 
         header{
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            flex-wrap: wrap; */
         
-            height: 254px;
+            height: 210px;
         }
         
         .logo{
@@ -362,7 +365,7 @@ h3{
             margin-top: 20px;
         }
         h1{
-            height: 76px;
+            height: 35px;
             width: 100px;
             justify-self: center;
             font-size: 28px;
