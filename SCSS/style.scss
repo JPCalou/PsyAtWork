@@ -1,0 +1,83 @@
+@import "Capacitaciones";
+
+/*header y footer*/
+body{
+    background:linear-gradient(#3c9687,beige);
+    margin: 0px;
+
+    header{
+       
+        border-bottom: 3px;
+        border-top: 0px;
+        border-left: 5px;
+        border-right: 0px;
+        border-color: beige;
+        border-style: groove; 
+        transition: all 1s;
+        
+        .logo{
+            border-radius: 100px;
+         
+           height: 130px;
+           width: 140px;
+           margin-top: 7px;
+           margin-bottom: 7px;
+           
+           justify-self:center;
+           align-self: center;
+           transition: all 2s; 
+           &:hover{
+            transform: scale(1.1);
+            border-radius: 100px;
+
+           }
+        nav{
+                align-self: center;
+            }
+
+         
+    }
+       
+
+       
+       
+    h1{ 
+        transition: all 1s;
+        align-self: center;
+        justify-content: center; 
+        text-align: center;
+
+        &:hover{
+            color:  rgb(12, 102, 236);
+        }
+     }
+       
+    }
+    
+footer{
+ 
+     border-top: 3px;
+     border-bottom: 0px;
+     border-right: 0px;
+     border-left: 0px;
+     border-style: groove;
+     border-color: beige; 
+     padding: 20px;
+         
+ }
+     
+    
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
