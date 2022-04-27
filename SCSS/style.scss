@@ -1,9 +1,12 @@
-@import "Capacitaciones";
+@import "Variables";
+@import "Tablet";
+@import "Mobile";
+
 
 /*header y footer*/
 body{
-    background:linear-gradient(#3c9687,beige);
-    margin: 0px;
+    background-color:$body;
+    margin :0px;
 
     header{
        
@@ -14,6 +17,7 @@ body{
         border-color: beige;
         border-style: groove; 
         transition: all 1s;
+        background-color: $header;
         
         .logo{
             border-radius: 100px;
@@ -33,6 +37,7 @@ body{
            }
         nav{
                 align-self: center;
+               
             }
 
          
@@ -46,9 +51,11 @@ body{
         align-self: center;
         justify-content: center; 
         text-align: center;
+        font-family: 'Poppins', sans-serif;
+       
 
         &:hover{
-            color:  rgb(12, 102, 236);
+            color:  $parrafos;
         }
      }
        
@@ -63,17 +70,256 @@ footer{
      border-style: groove;
      border-color: beige; 
      padding: 20px;
+     background-color: $footer;
          
- }
-     
+   
+    }
+ 
+
+
+/*index*/
+
+    .index__section{
+    
+        padding: 26px;
+            .video__presentacion{
+                border: black;
+                border-radius: 44px;
+                width: 453px;
+                height: 300px; 
+            }
+            .main{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                justify-self: center;
+                align-self: center;
+                height: 300px;
+                width: 450px; 
+                border: 5px;
+                border-style: groove;
+                border-radius: 15px;
+                overflow: hidden;  
+                transition: all 2s;
+                background-color: $parrafos;
+            
+            }
+
+}
+
+
+/*servicios*/
+    
+
+    .sec__servicios{
+        display: grid;
+        padding: 15px;
+        grid-template-rows:repeat(4, 1fr);
+        justify-content: inherit;
+    
+        .servicios{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 17px;
+            
+            .div__img1{
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                margin-left: 20px;
+                justify-self: center;
+                align-items: center;
+                
+                h3{
+                    align-self: center;
+                }
+                .img1{
+                    height: 214px;
+                    width: 233px;
+                    border-radius: 50%;
+                transition: all 2s;
+                & :hover{
+                    transform: scale(1.1);
+                    border-radius: 50%;
+
+                }
+                }
+                
+                
+            }
+        
+        }
+        #lideres{
+            flex-direction: row-reverse;
+        }
+        #psicotecnicos{
+            flex-direction: row-reverse;
+          }    
+        .p__servicios{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 169px;
+            width: 560px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 70px; 
+            align-self: flex-end;
+            background-color: $parrafos;
+            overflow: hidden;
+            
+    
+        }
+        
+    }
+   
+   
+
+  
+
+  
+
+  
+
+   
+
+/* Capacitaciones */
+
+    .sec_capacitaciones{
+        display: grid;
+        padding: 15px;
+        grid-template-columns:repeat(3, 1fr);
+        justify-content: inherit;
+
+        .capacitaciones{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 17px;
+            align-items: center;
+
+            .div_img2{
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                margin-left: 20px;
+                justify-self: center;
+                align-items: center;
+
+                .img2{
+                    height: 214px;
+                    width: 233px;
+                    border-radius: 50%;
+                   transition: all 2s;
+                }
+            }
+        }
+    }
+
+
+
+
+/*Nosotros*/
+
+    .sec__nosotros{
+        margin: 20px;
+
+        .nosotros{
+            @extend .servicios;
+            
+
+            .div__imgN{
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                align-items: center;
+              
+
+            
+
+                .img__n{
+                   @extend .img1;
+                   height: 250px;
+                   width: 200px;
+                   border-radius: 100px;
+                   align-self: center;
+                }
+
+                .p_nosotros{
+                   background-color: $parrafos;
+                   border-radius: 60px;
+
+                   ul{
+                       list-style-type: none;
+                       margin: 0px;
+                       text-align: start;
+                       padding: 15px;
+                       text-align: center;
+                       
+                       
+                   }
+
+                }
+
+            }
+        }
+
+      
+
+        
+    }
+
+    // Contacto
+
+
+
+.sec_contacto{
+    padding: 15px;
+
+    .div__contacto{
+        display: flex;
+        justify-content: center;
+        transition: all 1s;
+
+        .img_contacto{
+            border-radius: 50px;
+            height: 350px;
+            width: 450px;
+            
+        }
+    }
+
+}
+
+}
+
+// Practicando Mapas colores
+$colores:(
+    Nosotros: orange,
+    Servicios: blue,
+    Capacitaciones:aqua ,
+    Contacto: green
+
+);
+
+@each $key,$color in $colores{
+    .btn-#{$key} {
+      background-color: $color;
+    }
     
 }
 
 
+// Practicando Mixins
 
+@mixin titulos($align, $font){
+    text-align: $align;
+    font-size: $font;
+}
 
-
-
+h1{
+    @include titulos(center,30px)
+}
 
 
 

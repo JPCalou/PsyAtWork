@@ -1,0 +1,110 @@
+/*media quires mobile*/
+@media screen and (max-width: 425px){
+    body{
+        margin: 0px;
+    
+
+     header{
+        
+        
+
+         .logo{
+            height: 81px;
+            width: 86px;
+            justify-self: center;
+            align-self: center;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        h1{
+            height: 35px;
+            width: 100px;
+            justify-self: center;
+            font-size: 28px;
+            align-self: center;
+        }
+     }
+     
+     footer{
+         justify-content: flex-start;
+         text-align: start;
+     }
+
+     /* Mobile index */
+     .video__presentacion{
+         height: 250px;
+         width: 270px;
+     }
+     .main{
+         
+         width: 401px;
+         margin-top: 10px;
+     }
+     
+     /*mobile servicios*/
+     .sec__servicios{
+         justify-items: center;
+         margin: 0px;
+
+
+        .servicios{
+            flex-direction: column;
+            margin: 0%;
+            height: 513px;
+
+            .div__img1{
+                margin:0px;
+                margin-bottom: 10px;
+                align-items: center;
+
+                .img1{
+                    height: 123px;
+                    width: 120px;
+                   }
+                h3{
+                    font-size: 19px;
+                    align-self: center;
+                    text-align: center;
+                   }
+            }
+               
+        }
+        #lideres{flex-direction: column;
+   
+        }
+        #psicotecnicos{
+            flex-direction: column;
+        }     
+        .p__servicios{
+            width: 278px;
+            height:auto;
+            font-size: 13px;
+            overflow: auto;
+            text-align: justify;
+            border-radius: 53px;
+            padding-top: 0px
+        }   
+
+     }
+    
+   
+  
+
+     /* Media contactos */
+
+     
+
+     .div__contacto{
+         width: 100px;
+         height: 100px;
+        
+         .img_contacto{
+            width: 100px;
+            height: 100px;
+        }
+     }
+
+     
+ }
+}
