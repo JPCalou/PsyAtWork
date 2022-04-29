@@ -44,11 +44,13 @@
      
      /*mobile servicios*/
      .sec__servicios{
-         justify-items: center;
-         margin: 0px;
-
+         display: flex;
+         flex-direction: column;
+        justify-items: center;
+        margin: 0px;
 
         .servicios{
+            display: flex;
             flex-direction: column;
             margin: 0%;
             height: 513px;
@@ -58,35 +60,50 @@
                 margin-bottom: 10px;
                 align-items: center;
 
-                .img1{
-                    height: 123px;
-                    width: 120px;
-                   }
                 h3{
                     font-size: 19px;
                     align-self: center;
                     text-align: center;
                    }
+                .img1{
+                    height: 123px;
+                    width: 120px;
+                   }
+               }
+             .p__servicios{
+                width: 278px;
+                height:auto;
+                font-size: 13px;
+                overflow: auto;
+                text-align: justify;
+                border-radius: 53px;
+                padding-top: 0px
             }
-               
         }
+
         #lideres{flex-direction: column;
-   
+
         }
         #psicotecnicos{
             flex-direction: column;
-        }     
-        .p__servicios{
-            width: 278px;
-            height:auto;
-            font-size: 13px;
-            overflow: auto;
-            text-align: justify;
-            border-radius: 53px;
-            padding-top: 0px
-        }   
 
-     }
+        }
+
+    }        
+
+    
+       
+   
+  
+   
+
+    //  MOBILE NOSOTROS
+
+    .div__imgN{
+        margin-bottom: 50px;
+
+        
+    }
     
    
   

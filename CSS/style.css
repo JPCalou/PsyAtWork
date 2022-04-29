@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
   header {
-    height: 253px;
     /* grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -31,10 +30,15 @@
   /*tablet servicios*/
   .sec__servicios {
     margin-right: 0px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; }
     .sec__servicios .servicios, .sec__servicios body .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
       height: 220px;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
       .sec__servicios .servicios .div__img1, .sec__servicios body .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
         align-items: center;
         width: 290px; }
@@ -43,83 +47,14 @@
           width: 154px; }
       .sec__servicios .servicios .p__servicios, .sec__servicios body .sec__nosotros .nosotros .p__servicios, body .sec__nosotros .sec__servicios .nosotros .p__servicios {
         width: 415px;
-        height: 189px;
         text-align: justify;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         font-size: 14px;
-        overflow: auto;
-        transition: all 2s; }
+        transition: all 2s;
+        border-radius: 40px; }
     .sec__servicios #lideres {
       flex-direction: row; }
     .sec__servicios #psicotecnicos {
       flex-direction: row; } }
-
-/*media quires mobile*/
-@media screen and (max-width: 425px) {
-  body {
-    margin: 0px;
-    /* Mobile index */
-    /*mobile servicios*/
-    /* Media contactos */ }
-    body header .logo {
-      height: 81px;
-      width: 86px;
-      justify-self: center;
-      align-self: center;
-      margin-top: 20px;
-      margin-left: 10px; }
-    body header h1 {
-      height: 35px;
-      width: 100px;
-      justify-self: center;
-      font-size: 28px;
-      align-self: center; }
-    body footer {
-      justify-content: flex-start;
-      text-align: start; }
-    body .video__presentacion {
-      height: 250px;
-      width: 270px; }
-    body .main {
-      width: 401px;
-      margin-top: 10px; }
-    body .sec__servicios {
-      justify-items: center;
-      margin: 0px; }
-      body .sec__servicios .servicios, body .sec__servicios .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
-        flex-direction: column;
-        margin: 0%;
-        height: 513px; }
-        body .sec__servicios .servicios .div__img1, body .sec__servicios .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
-          margin: 0px;
-          margin-bottom: 10px;
-          align-items: center; }
-          body .sec__servicios .servicios .div__img1 .img1, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
-            height: 123px;
-            width: 120px; }
-          body .sec__servicios .servicios .div__img1 h3, body .sec__servicios .sec__nosotros .nosotros .div__img1 h3, body .sec__nosotros .sec__servicios .nosotros .div__img1 h3 {
-            font-size: 19px;
-            align-self: center;
-            text-align: center; }
-      body .sec__servicios #lideres {
-        flex-direction: column; }
-      body .sec__servicios #psicotecnicos {
-        flex-direction: column; }
-      body .sec__servicios .p__servicios {
-        width: 278px;
-        height: auto;
-        font-size: 13px;
-        overflow: auto;
-        text-align: justify;
-        border-radius: 53px;
-        padding-top: 0px; }
-    body .div__contacto {
-      width: 100px;
-      height: 100px; }
-      body .div__contacto .img_contacto {
-        width: 100px;
-        height: 100px; } }
 
 /*header y footer*/
 body {
@@ -169,6 +104,10 @@ body {
     border-color: beige;
     padding: 20px;
     background-color: #CEDEF2; }
+    body footer h3 {
+      font-family: 'Poppins', sans-serif; }
+    body footer p {
+      font-family: 'Poppins', sans-serif; }
   body .index__section {
     padding: 26px; }
     body .index__section .video__presentacion {
@@ -194,8 +133,6 @@ body {
     grid-template-rows: repeat(4, 1fr);
     justify-content: inherit; }
     body .sec__servicios .servicios, body .sec__servicios .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
-      display: flex;
-      flex-direction: row;
       margin-bottom: 17px; }
       body .sec__servicios .servicios .div__img1, body .sec__servicios .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
         display: flex;
@@ -205,25 +142,25 @@ body {
         justify-self: center;
         align-items: center; }
         body .sec__servicios .servicios .div__img1 h3, body .sec__servicios .sec__nosotros .nosotros .div__img1 h3, body .sec__nosotros .sec__servicios .nosotros .div__img1 h3 {
-          align-self: center; }
+          align-self: center;
+          font-family: 'Poppins', sans-serif; }
         body .sec__servicios .servicios .div__img1 .img1, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
           height: 214px;
           width: 233px;
           border-radius: 50%;
           transition: all 2s; }
-          body .sec__servicios .servicios .div__img1 .img1 :hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1 :hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1 :hover, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n :hover, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n :hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n :hover, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n :hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n :hover, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n :hover {
+          body .sec__servicios .servicios .div__img1 .img1:hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1:hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1:hover, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n:hover, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n:hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n:hover, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n:hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n:hover, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n:hover {
             transform: scale(1.1);
-            border-radius: 50%; }
+            border-radius: 100px; }
     body .sec__servicios #lideres {
       flex-direction: row-reverse; }
     body .sec__servicios #psicotecnicos {
       flex-direction: row-reverse; }
     body .sec__servicios .p__servicios {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-wrap: wrap;
       align-content: center;
-      height: 169px;
       width: 560px;
       padding-right: 30px;
       padding-left: 30px;
@@ -234,10 +171,10 @@ body {
       background-color: #D9B2A9;
       overflow: hidden; }
   body .sec_capacitaciones {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     padding: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: inherit; }
+    justify-content: space-evenly; }
     body .sec_capacitaciones .capacitaciones {
       display: flex;
       flex-direction: column;
@@ -255,27 +192,39 @@ body {
           width: 233px;
           border-radius: 50%;
           transition: all 2s; }
+          body .sec_capacitaciones .capacitaciones .div_img2 .img2:hover {
+            transform: scale(1.1);
+            border-radius: 100px; }
+      body .sec_capacitaciones .capacitaciones p {
+        font-family: 'Poppins', sans-serif; }
   body .sec__nosotros {
     margin: 20px; }
     body .sec__nosotros .nosotros .div__imgN {
       display: flex;
       flex-direction: column;
       justify-self: center;
-      align-items: center; }
+      align-items: center;
+      transition: all 2s; }
       body .sec__nosotros .nosotros .div__imgN .img__n {
         height: 250px;
         width: 200px;
         border-radius: 100px;
-        align-self: center; }
+        align-self: center;
+        transition: all 2s; }
+        body .sec__nosotros .nosotros .div__imgN .img__n:hover {
+          transform: scale(1.1);
+          border-radius: 100px; }
       body .sec__nosotros .nosotros .div__imgN .p_nosotros {
         background-color: #D9B2A9;
-        border-radius: 60px; }
+        border-radius: 60px;
+        font-family: 'Poppins', sans-serif; }
         body .sec__nosotros .nosotros .div__imgN .p_nosotros ul {
           list-style-type: none;
           margin: 0px;
           text-align: start;
           padding: 15px;
-          text-align: center; }
+          text-align: center;
+          font-family: 'Poppins', sans-serif; }
   body .sec_contacto {
     padding: 15px; }
     body .sec_contacto .div__contacto {
@@ -285,20 +234,98 @@ body {
       body .sec_contacto .div__contacto .img_contacto {
         border-radius: 50px;
         height: 350px;
-        width: 450px; }
+        width: 450px;
+        transition: all 2s; }
+        body .sec_contacto .div__contacto .img_contacto:hover {
+          transform: scale(1.1);
+          border-radius: 100px; }
 
-.btn-Nosotros {
-  background-color: orange; }
-
-.btn-Servicios {
-  background-color: blue; }
-
-.btn-Capacitaciones {
-  background-color: aqua; }
-
-.btn-Contacto {
-  background-color: green; }
-
-h1 {
-  text-align: center;
-  font-size: 30px; }
+/*media quires mobile*/
+@media screen and (max-width: 425px) {
+  body {
+    margin: 0px;
+    /* Mobile index */
+    /*mobile servicios*/
+    /* Media contactos */ }
+    body header .logo {
+      height: 81px;
+      width: 86px;
+      justify-self: center;
+      align-self: center;
+      margin-top: 20px;
+      margin-left: 10px; }
+    body header h1 {
+      height: 35px;
+      width: 100px;
+      justify-self: center;
+      font-size: 28px;
+      align-self: center; }
+    body footer {
+      justify-content: flex-start;
+      text-align: start; }
+    body .video__presentacion {
+      height: 250px;
+      width: 270px; }
+    body .main {
+      width: 401px;
+      margin-top: 10px; }
+    body .sec__servicios {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      margin: 0px; }
+      body .sec__servicios .servicios, body .sec__servicios .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        height: 800px; }
+        body .sec__servicios .servicios .div__img1, body .sec__servicios .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
+          margin: 0px;
+          margin-bottom: 10px;
+          align-items: center; }
+          body .sec__servicios .servicios .div__img1 h3, body .sec__servicios .sec__nosotros .nosotros .div__img1 h3, body .sec__nosotros .sec__servicios .nosotros .div__img1 h3 {
+            font-size: 19px;
+            align-self: center;
+            text-align: center; }
+          body .sec__servicios .servicios .div__img1 .img1, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
+            height: 200px;
+            width: 200px; }
+        body .sec__servicios .servicios .p__servicios, body .sec__servicios .sec__nosotros .nosotros .p__servicios, body .sec__nosotros .sec__servicios .nosotros .p__servicios {
+          width: 278px;
+          height: auto;
+          font-size: 13px;
+          overflow: auto;
+          text-align: start;
+          border-radius: 53px;
+          padding-top: 10px; }
+      body .sec__servicios #lideres {
+        flex-direction: column; }
+      body .sec__servicios #psicotecnicos {
+        flex-direction: column; }
+    body .sec_capacitaciones {
+      flex-direction: column; }
+      body .sec_capacitaciones .capacitaciones {
+        display: flex;
+        flex-direction: column;
+        margin: 0%; }
+        body .sec_capacitaciones .capacitaciones .div_img2 {
+          flex-direction: column; }
+    body .sec_contacto {
+      flex-direction: column;
+      align-items: center; }
+      body .sec_contacto .div__contacto {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 20px; }
+        body .sec_contacto .div__contacto .img_contacto {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%; }
+    body .div__imgN {
+      margin-bottom: 50px; }
+    body .div__contacto {
+      width: 100px;
+      height: 100px; }
+      body .div__contacto .img_contacto {
+        width: 100px;
+        height: 100px; } }
