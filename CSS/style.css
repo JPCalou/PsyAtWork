@@ -133,6 +133,8 @@ body {
     grid-template-rows: repeat(4, 1fr);
     justify-content: inherit; }
     body .sec__servicios .servicios, body .sec__servicios .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
+      display: flex;
+      flex-direction: row;
       margin-bottom: 17px; }
       body .sec__servicios .servicios .div__img1, body .sec__servicios .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
         display: flex;
