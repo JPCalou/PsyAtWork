@@ -20,10 +20,10 @@ body{
         background-color: $header;
         
         .logo{
-            border-radius: 100px;
+            // border-radius: 100px;
          
            height: 130px;
-           width: 140px;
+           width: 200px;
            margin-top: 7px;
            margin-bottom: 7px;
            
@@ -72,11 +72,61 @@ body{
         padding: 20px;
         background-color: $footer;
         
-        h3{
-            font-family: 'Poppins', sans-serif;
+       
+        
+     
+      
+         ul {
+             justify-self: center;
+             align-self: center;
+            li{
+                display: inline-block;
+                list-style: none;
+                
+                justify-self: end;
+
+                i{
+                    height: 50px;
+                    width: 50px;
+                    background-color: $parrafos;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding-top: 15px;
+                    transition: all .2s;
+
+                   &:hover{
+                       transform: translateY(-3px) scale(1.05);
+
+                      
+
+                   }
+                   
+                   
+
                 }
-        p {
-            font-family: 'Poppins', sans-serif;
+                .fa-instagram{
+                    &:hover{
+                        background-color: #e4405f;
+                        color: white;
+                        
+                    }
+                }
+                .fa-linkedin-in{
+                    &:hover{
+                        background-color: #007785;
+                        color: white;
+
+                    }
+                }
+                .fa-tiktok{
+                    &:hover{
+                        background-color: black;
+                        color: white;
+
+                    }
+                }
+            }
         }
     
         }
@@ -88,24 +138,25 @@ body{
     .index__section{
     
         padding: 26px;
-            .video__presentacion{
-                border: black;
-                border-radius: 44px;
-                width: 453px;
-                height: 300px; 
-            }
+           
+          .img_C{
+              height: 30rem;
+        
+          }
             .main{
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family:'Poppins', sans-serif;
                 justify-self: center;
                 align-self: center;
-                height: 300px;
-                width: 450px; 
+                
+                width: 700px; 
                 border: 5px;
                 border-style: groove;
                 border-radius: 15px;
-                overflow: hidden;  
+                  
                 transition: all 2s;
                 background-color: $parrafos;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
             
             }
 
@@ -136,20 +187,24 @@ body{
                 
                 h3{
                     align-self: center;
+                    text-align: center;
                     font-family: 'Poppins', sans-serif;
                 }
                 .img1{
                     height: 214px;
                     width: 233px;
+                    margin-top: 1rem;
                     border-radius: 50%;
                     transition: all 2s; 
                     &:hover{
                      transform: scale(1.1);
                      border-radius: 100px;}
                 }
+            
                 
                 
             }
+            
         
         }
         #lideres{
@@ -185,7 +240,7 @@ body{
 
     .sec_capacitaciones{
         display: flex;
-        flex-direction: row;
+        
         padding: 15px;
         justify-content: space-evenly;
 
@@ -204,8 +259,10 @@ body{
                 align-items: center;
 
                 .img2{
-                    height: 214px;
-                    width: 233px;
+                    height: 215px;
+                    width: 235px;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
                     border-radius: 50%;
                     transition: all 2s; 
                     &:hover{
@@ -216,6 +273,13 @@ body{
 
             p{
                 font-family: 'Poppins', sans-serif;
+                border-radius: 50px;
+                background-color: $parrafos;
+                width: 20rem;
+                padding: 1rem;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -227,7 +291,9 @@ body{
 
     .sec__nosotros{
         margin: 20px;
-
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        
         .nosotros{
             @extend .servicios;
             
@@ -246,6 +312,7 @@ body{
                    @extend .img1;
                    height: 250px;
                    width: 200px;
+                   margin-bottom: 1rem;
                    border-radius: 100px;
                    align-self: center;
                    transition: all 2s; 
@@ -258,6 +325,8 @@ body{
                    background-color: $parrafos;
                    border-radius: 60px;
                    font-family: 'Poppins', sans-serif;
+                   margin-top: 2rem;
+                   margin-bottom: 2rem;
 
                    ul{
                        list-style-type: none;
@@ -274,6 +343,7 @@ body{
 
             }
         }
+      
 
       
 
@@ -286,6 +356,8 @@ body{
 
 .sec_contacto{
     padding: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     .div__contacto{
         display: flex;
@@ -378,6 +450,8 @@ body{
                 .img1{
                     height: 200px;
                     width: 200px;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
                    }
                }
              .p__servicios{
@@ -388,6 +462,7 @@ body{
                 text-align: start;
                 border-radius: 53px;
                 padding-top: 10px;
+                align-self: center;
             }
         }
 
@@ -413,9 +488,15 @@ body{
             display: flex;
             flex-direction: column;
             margin: 0%;
+            margin-bottom: 10rem;
 
             .div_img2{
                 flex-direction: column;
+                img2{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+
+                }
             }
         }
     }
@@ -448,6 +529,10 @@ body{
 
     .div__imgN{
         margin-bottom: 50px;
+        .img__n{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
 
         
     }
@@ -471,6 +556,95 @@ body{
 
      
  }
+}
+
+// media queris tablet
+@media screen and (max-width: 768px){
+
+    // SERVICIOS
+
+    .sec__servicios{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 0px;
+
+       .servicios{
+     
+           margin: 0%;
+           margin-top: 100px;
+           margin-bottom: 100px;
+      
+
+           .div__img1{
+               margin:0px;
+               margin-bottom: 10px;
+               align-items: center;
+               justify-items: center;
+
+               h3{
+                   
+                   align-self: center;
+                   text-align: center;
+                  }
+               .img1{
+                
+                   margin-top: 1rem;
+                   margin-bottom: 1rem;
+                  }
+              }
+            .p__servicios{
+           
+                margin-bottom: 35px;
+                margin-top: 25px;
+               text-align: start;
+               border-radius: 53px;
+               padding-top: 10px;
+               align-self: flex-start;
+           }
+       }
+    }
+
+    // CAPACITACIONES
+
+    .sec_capacitaciones{
+           
+        flex-direction: column;
+
+        .capacitaciones{
+            display: flex;
+            flex-direction: column;
+            margin: 0%;
+            margin-bottom: 10rem;
+
+            .div_img2{
+                flex-direction: column;
+                img2{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+
+                }
+            }
+        }
+    }
+
+    // contacto
+
+    .div__contacto{
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+    }
+
+    // Nosotros
+
+    .nosotros{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+
+
+
 }
 
 

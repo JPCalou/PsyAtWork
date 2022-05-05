@@ -7,6 +7,7 @@
     <meta name="keywords" content="p@w,psychology,psicologia,laboral,work,capacitaciones,salud,mental,equipo,dinamicas,psicologicas">
     <meta name="descrpition" content="Dinamicas psicologicas laborales para detectar y prevenir situaciones que intervengan con el rendimiento y bienestar de los colaboradores. Acompañamiento a lideres en la gestion de equipo a partir de el desarrollo estrategico de habilidades blandas">
     <title>Home</title>
+    <script src="https://kit.fontawesome.com/78849e3436.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../multimedia/favicon.ico">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -18,9 +19,9 @@
   <!-- HEADER -->
 
     <header class="row justify-content-between">
-        <img src="./multimedia/logo bauti.jpeg" alt="Logo" class="logo col-lg-4 col-sm-12">
+        <img style="cursor:pointer " src="./multimedia/LogoSolo.png" alt="Logo" class="logo col-lg-4 col-sm-12">
 
-        <h1 class=" col-lg-6 col-sm-12 color--titulos">Pychology @ Work</h1>
+        <h1 style="cursor:pointer" class=" col-lg-6 col-sm-12 color--titulos">Psychology at Work</h1>
        
      
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -59,11 +60,50 @@
 
     <!-- CONTENIDO PAGINA PRINCIPAL -->
     <section class="index__section row justify-content-around">
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KVakLLMBQxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__presentacion col-6" ></iframe>
 
-        <main class="main col-6 color--parrafos">Psychology at work es un proyecto mediante el cual se busca incrementar y mantener el compromiso, la motivación, el sentido de pertenencia y de trabajo de los colaboradores dentro de una empresa. Para ello se ofrecen sesiones de compromiso a los colaboradores, asesoramiento a líderes, un espacio dirigido a la salud mental laboral y la realización de psicotécnicos. Las herramientas utilizadas en cada uno de los servicios son especialmente diseñadas para la empresa, sus desafíos y el rol de los colaboradores.
-          En función de las necesidades y demandas se puede contratar el paquete completo o bien cada servicio de forma individual.</main>
+        
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./multimedia/apoyo grupal-min.jpg" class="d-block w-100 img_C" alt="Apoyo colectivo">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apoyo Colectivo</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./multimedia/soporte lideres-min.jpg" class="d-block w-100 img_C" alt="Crecimiento grupal">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Liderazgo</h5>
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/atencion online-min.jpg" class="d-block w-100 img_C" alt="Atencion Online">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Atencion personal</h5>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+        <article class="main col-6 color--parrafos">Psychology at work es un proyecto mediante el cual se busca incrementar y mantener el compromiso, la motivación, el sentido de pertenencia y de trabajo de los colaboradores dentro de una empresa. Para ello se ofrecen diferentes servicios especialmente diseñados para la empresa, sus desafíos y el rol de los colaboradores.
+        </article>
 
        
        
@@ -71,11 +111,16 @@
 
 <!--Footer-->
 <footer class="footer row">
-  <h3 class="col-lg-4 col-md-12 col-sm-12">Contacto</h3>
-  <p class="col-lg-4 col-md-12 col-sm-12">"Whatsapp: 11-4567-8922" </p>
-  <p class="col-lg-4 col-md-12 col-sm-12">"Mail: PAW@hotmail.com"</p>
+    
+      <ul>
+        <li><i style="cursor:pointer " class="fa-brands fa-instagram"></i></li>
+        <li><i style="cursor:pointer " class="fa-brands fa-tiktok"></i></li>
+        <li><i style="cursor:pointer " class="fa-brands fa-linkedin-in"></i></li>
+      </ul>
+    
 </footer>
 
     <script src="./js/bootstrap.min.js"></script>
+    
 </body>
 </html>

@@ -74,9 +74,8 @@ body {
     transition: all 1s;
     background-color: #2A708C; }
     body header .logo {
-      border-radius: 100px;
       height: 130px;
-      width: 140px;
+      width: 200px;
       margin-top: 7px;
       margin-bottom: 7px;
       justify-self: center;
@@ -104,29 +103,49 @@ body {
     border-color: beige;
     padding: 20px;
     background-color: #CEDEF2; }
-    body footer h3 {
-      font-family: 'Poppins', sans-serif; }
-    body footer p {
-      font-family: 'Poppins', sans-serif; }
+    body footer ul {
+      justify-self: center;
+      align-self: center; }
+      body footer ul li {
+        display: inline-block;
+        list-style: none;
+        justify-self: end; }
+        body footer ul li i {
+          height: 50px;
+          width: 50px;
+          background-color: #D9B2A9;
+          font-size: 20px;
+          border-radius: 10px;
+          text-align: center;
+          padding-top: 15px;
+          transition: all .2s; }
+          body footer ul li i:hover {
+            transform: translateY(-3px) scale(1.05); }
+        body footer ul li .fa-instagram:hover {
+          background-color: #e4405f;
+          color: white; }
+        body footer ul li .fa-linkedin-in:hover {
+          background-color: #007785;
+          color: white; }
+        body footer ul li .fa-tiktok:hover {
+          background-color: black;
+          color: white; }
   body .index__section {
     padding: 26px; }
-    body .index__section .video__presentacion {
-      border: black;
-      border-radius: 44px;
-      width: 453px;
-      height: 300px; }
+    body .index__section .img_C {
+      height: 30rem; }
     body .index__section .main {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       justify-self: center;
       align-self: center;
-      height: 300px;
-      width: 450px;
+      width: 700px;
       border: 5px;
       border-style: groove;
       border-radius: 15px;
-      overflow: hidden;
       transition: all 2s;
-      background-color: #D9B2A9; }
+      background-color: #D9B2A9;
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
   body .sec__servicios {
     display: grid;
     padding: 15px;
@@ -145,10 +164,12 @@ body {
         align-items: center; }
         body .sec__servicios .servicios .div__img1 h3, body .sec__servicios .sec__nosotros .nosotros .div__img1 h3, body .sec__nosotros .sec__servicios .nosotros .div__img1 h3 {
           align-self: center;
+          text-align: center;
           font-family: 'Poppins', sans-serif; }
         body .sec__servicios .servicios .div__img1 .img1, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
           height: 214px;
           width: 233px;
+          margin-top: 1rem;
           border-radius: 50%;
           transition: all 2s; }
           body .sec__servicios .servicios .div__img1 .img1:hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1:hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1:hover, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n:hover, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n:hover, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n:hover, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n:hover, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n:hover, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n:hover {
@@ -174,7 +195,6 @@ body {
       overflow: hidden; }
   body .sec_capacitaciones {
     display: flex;
-    flex-direction: row;
     padding: 15px;
     justify-content: space-evenly; }
     body .sec_capacitaciones .capacitaciones {
@@ -190,17 +210,28 @@ body {
         justify-self: center;
         align-items: center; }
         body .sec_capacitaciones .capacitaciones .div_img2 .img2 {
-          height: 214px;
-          width: 233px;
+          height: 215px;
+          width: 235px;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
           border-radius: 50%;
           transition: all 2s; }
           body .sec_capacitaciones .capacitaciones .div_img2 .img2:hover {
             transform: scale(1.1);
             border-radius: 100px; }
       body .sec_capacitaciones .capacitaciones p {
-        font-family: 'Poppins', sans-serif; }
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+        background-color: #D9B2A9;
+        width: 20rem;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
   body .sec__nosotros {
-    margin: 20px; }
+    margin: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
     body .sec__nosotros .nosotros .div__imgN {
       display: flex;
       flex-direction: column;
@@ -210,6 +241,7 @@ body {
       body .sec__nosotros .nosotros .div__imgN .img__n {
         height: 250px;
         width: 200px;
+        margin-bottom: 1rem;
         border-radius: 100px;
         align-self: center;
         transition: all 2s; }
@@ -219,7 +251,9 @@ body {
       body .sec__nosotros .nosotros .div__imgN .p_nosotros {
         background-color: #D9B2A9;
         border-radius: 60px;
-        font-family: 'Poppins', sans-serif; }
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2rem;
+        margin-bottom: 2rem; }
         body .sec__nosotros .nosotros .div__imgN .p_nosotros ul {
           list-style-type: none;
           margin: 0px;
@@ -228,7 +262,9 @@ body {
           text-align: center;
           font-family: 'Poppins', sans-serif; }
   body .sec_contacto {
-    padding: 15px; }
+    padding: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     body .sec_contacto .div__contacto {
       display: flex;
       justify-content: center;
@@ -291,7 +327,9 @@ body {
             text-align: center; }
           body .sec__servicios .servicios .div__img1 .img1, body .sec__servicios .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, body .sec__servicios .servicios .div__img1 .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, body .sec__servicios .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, body .sec__servicios .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
             height: 200px;
-            width: 200px; }
+            width: 200px;
+            margin-top: 1rem;
+            margin-bottom: 1rem; }
         body .sec__servicios .servicios .p__servicios, body .sec__servicios .sec__nosotros .nosotros .p__servicios, body .sec__nosotros .sec__servicios .nosotros .p__servicios {
           width: 278px;
           height: auto;
@@ -299,7 +337,8 @@ body {
           overflow: auto;
           text-align: start;
           border-radius: 53px;
-          padding-top: 10px; }
+          padding-top: 10px;
+          align-self: center; }
       body .sec__servicios #lideres {
         flex-direction: column; }
       body .sec__servicios #psicotecnicos {
@@ -309,9 +348,13 @@ body {
       body .sec_capacitaciones .capacitaciones {
         display: flex;
         flex-direction: column;
-        margin: 0%; }
+        margin: 0%;
+        margin-bottom: 10rem; }
         body .sec_capacitaciones .capacitaciones .div_img2 {
           flex-direction: column; }
+          body .sec_capacitaciones .capacitaciones .div_img2 img2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem; }
     body .sec_contacto {
       flex-direction: column;
       align-items: center; }
@@ -325,9 +368,59 @@ body {
           border-radius: 50%; }
     body .div__imgN {
       margin-bottom: 50px; }
+      body .div__imgN .img__n {
+        margin-top: 2rem;
+        margin-bottom: 1rem; }
     body .div__contacto {
       width: 100px;
       height: 100px; }
       body .div__contacto .img_contacto {
         width: 100px;
         height: 100px; } }
+
+@media screen and (max-width: 768px) {
+  .sec__servicios {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0px; }
+    .sec__servicios .servicios, .sec__servicios body .sec__nosotros .nosotros, body .sec__nosotros .sec__servicios .nosotros {
+      margin: 0%;
+      margin-top: 100px;
+      margin-bottom: 100px; }
+      .sec__servicios .servicios .div__img1, .sec__servicios body .sec__nosotros .nosotros .div__img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 {
+        margin: 0px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-items: center; }
+        .sec__servicios .servicios .div__img1 h3, .sec__servicios body .sec__nosotros .nosotros .div__img1 h3, body .sec__nosotros .sec__servicios .nosotros .div__img1 h3 {
+          align-self: center;
+          text-align: center; }
+        .sec__servicios .servicios .div__img1 .img1, .sec__servicios body .sec__nosotros .nosotros .div__img1 .img1, body .sec__nosotros .sec__servicios .nosotros .div__img1 .img1, .sec__servicios .servicios .div__img1 body .sec__nosotros .nosotros .div__imgN .img__n, body .sec__nosotros .nosotros .div__imgN .sec__servicios .servicios .div__img1 .img__n, .sec__servicios body .sec__nosotros .nosotros .div__img1 .div__imgN .img__n, .sec__servicios body .sec__nosotros .nosotros .div__imgN .div__img1 .img__n, body .sec__nosotros .sec__servicios .nosotros .div__img1 .div__imgN .img__n, body .sec__nosotros .sec__servicios .nosotros .div__imgN .div__img1 .img__n {
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
+      .sec__servicios .servicios .p__servicios, .sec__servicios body .sec__nosotros .nosotros .p__servicios, body .sec__nosotros .sec__servicios .nosotros .p__servicios {
+        margin-bottom: 35px;
+        margin-top: 25px;
+        text-align: start;
+        border-radius: 53px;
+        padding-top: 10px;
+        align-self: flex-start; }
+  .sec_capacitaciones {
+    flex-direction: column; }
+    .sec_capacitaciones .capacitaciones {
+      display: flex;
+      flex-direction: column;
+      margin: 0%;
+      margin-bottom: 10rem; }
+      .sec_capacitaciones .capacitaciones .div_img2 {
+        flex-direction: column; }
+        .sec_capacitaciones .capacitaciones .div_img2 img2 {
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
+  .div__contacto {
+    margin-bottom: 5rem;
+    margin-top: 3rem; }
+  .nosotros {
+    margin-top: 3rem;
+    margin-bottom: 5rem; } }
