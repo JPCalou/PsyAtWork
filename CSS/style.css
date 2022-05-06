@@ -138,6 +138,7 @@ body {
       font-family: 'Poppins', sans-serif;
       justify-self: center;
       align-self: center;
+      text-align: justify;
       width: 700px;
       border: 5px;
       border-style: groove;
@@ -192,7 +193,8 @@ body {
       border-radius: 70px;
       align-self: flex-end;
       background-color: #D9B2A9;
-      overflow: hidden; }
+      overflow: hidden;
+      text-align: justify; }
   body .sec_capacitaciones {
     display: flex;
     padding: 15px;
@@ -301,9 +303,6 @@ body {
     body footer {
       justify-content: flex-start;
       text-align: start; }
-    body .video__presentacion {
-      height: 250px;
-      width: 270px; }
     body .main {
       width: 401px;
       margin-top: 10px; }
@@ -360,12 +359,12 @@ body {
       align-items: center; }
       body .sec_contacto .div__contacto {
         height: 200px;
-        width: 200px;
-        margin-bottom: 20px; }
+        width: 200px; }
         body .sec_contacto .div__contacto .img_contacto {
           height: 200px;
           width: 200px;
-          border-radius: 50%; }
+          border-radius: 50%;
+          margin-bottom: 3rem; }
     body .div__imgN {
       margin-bottom: 50px; }
       body .div__imgN .img__n {

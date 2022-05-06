@@ -37,6 +37,8 @@ body{
            
         nav{
                 align-self: center;
+
+               
                
             }
 
@@ -147,6 +149,7 @@ body{
                 font-family:'Poppins', sans-serif;
                 justify-self: center;
                 align-self: center;
+                text-align: justify;
                 
                 width: 700px; 
                 border: 5px;
@@ -227,6 +230,7 @@ body{
             align-self: flex-end;
             background-color: $parrafos;
             overflow: hidden;
+            text-align: justify;
             
     
         }
@@ -414,10 +418,7 @@ body{
      }
 
      /* Mobile index */
-     .video__presentacion{
-         height: 250px;
-         width: 270px;
-     }
+    
      .main{
          
          width: 401px;
@@ -510,12 +511,13 @@ body{
             .div__contacto{
                 height: 200px;
                 width: 200px;
-                margin-bottom: 20px;
+              
 
             .img_contacto{
                 height: 200px;
                 width: 200px;
                 border-radius: 50%;
+                margin-bottom: 3rem;
             }
         }
         }
