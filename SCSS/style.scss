@@ -38,6 +38,7 @@ body{
         nav{
                 align-self: center;
 
+              
                
                
             }
@@ -54,6 +55,7 @@ body{
         justify-content: center; 
         text-align: center;
         font-family: 'Poppins', sans-serif;
+        color: $body;
        
 
         &:hover{
@@ -141,15 +143,12 @@ body{
     
         padding: 26px;
            
-          .img_C{
-              height: 30rem;
         
-          }
             .main{
                 font-family:'Poppins', sans-serif;
                 justify-self: center;
                 align-self: center;
-                text-align: justify;
+                text-align: center;
                 
                 width: 700px; 
                 border: 5px;
@@ -528,16 +527,18 @@ body{
    
 
     //  MOBILE NOSOTROS
+        .nosotros{
+            margin-top: 0px;
+                    .div__imgN{
+                        margin-bottom: 50px;
+                        .img__n{
+                            margin-top: 2rem;
+                            margin-bottom: 1rem;
+                        }
 
-    .div__imgN{
-        margin-bottom: 50px;
-        .img__n{
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        
-    }
+                        
+                    }
+                }
     
    
   

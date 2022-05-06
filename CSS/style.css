@@ -91,7 +91,8 @@ body {
       align-self: center;
       justify-content: center;
       text-align: center;
-      font-family: 'Poppins', sans-serif; }
+      font-family: 'Poppins', sans-serif;
+      color: #F2F2F2; }
       body header h1:hover {
         color: #D9B2A9; }
   body footer {
@@ -132,13 +133,11 @@ body {
           color: white; }
   body .index__section {
     padding: 26px; }
-    body .index__section .img_C {
-      height: 30rem; }
     body .index__section .main {
       font-family: 'Poppins', sans-serif;
       justify-self: center;
       align-self: center;
-      text-align: justify;
+      text-align: center;
       width: 700px;
       border: 5px;
       border-style: groove;
@@ -365,11 +364,13 @@ body {
           width: 200px;
           border-radius: 50%;
           margin-bottom: 3rem; }
-    body .div__imgN {
-      margin-bottom: 50px; }
-      body .div__imgN .img__n {
-        margin-top: 2rem;
-        margin-bottom: 1rem; }
+    body .nosotros {
+      margin-top: 0px; }
+      body .nosotros .div__imgN {
+        margin-bottom: 50px; }
+        body .nosotros .div__imgN .img__n {
+          margin-top: 2rem;
+          margin-bottom: 1rem; }
     body .div__contacto {
       width: 100px;
       height: 100px; }
