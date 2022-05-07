@@ -22,10 +22,11 @@ body{
         .logo{
             // border-radius: 100px;
          
-           height: 130px;
-           width: 200px;
+           height: 100px;
+           width: 160px;
            margin-top: 7px;
            margin-bottom: 7px;
+           color: black;
            
            justify-self:center;
            align-self: center;
@@ -55,7 +56,9 @@ body{
         justify-content: center; 
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        color: $body;
+        color: black;
+        justify-self: center;
+        padding: 1rem;
        
 
         &:hover{
@@ -98,6 +101,7 @@ body{
                     text-align: center;
                     padding-top: 15px;
                     transition: all .2s;
+                    color: #F2F2F2;
 
                    &:hover{
                        transform: translateY(-3px) scale(1.05);
@@ -154,7 +158,7 @@ body{
                 border: 5px;
                 border-style: groove;
                 border-radius: 15px;
-                  
+                color: $body;
                 transition: all 2s;
                 background-color: $parrafos;
                 margin-top: 3rem;
@@ -230,6 +234,7 @@ body{
             background-color: $parrafos;
             overflow: hidden;
             text-align: justify;
+            color: #F2F2F2;
             
     
         }
@@ -283,6 +288,7 @@ body{
                 text-align: center;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
+                color:$body;
             }
         }
     }
@@ -314,7 +320,7 @@ body{
                 .img__n{
                    @extend .img1;
                    height: 250px;
-                   width: 200px;
+                   width: 215px;
                    margin-bottom: 1rem;
                    border-radius: 100px;
                    align-self: center;
@@ -330,6 +336,7 @@ body{
                    font-family: 'Poppins', sans-serif;
                    margin-top: 2rem;
                    margin-bottom: 2rem;
+                   color: $body;
 
                    ul{
                        list-style-type: none;
