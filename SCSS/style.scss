@@ -1,5 +1,5 @@
 @import "Variables";
-@import "Tablet";
+@import 'animate.css';
 // @import "Mobile";
 
 
@@ -18,39 +18,22 @@ body{
         transition: all 1s;
         background-color: $header;
         
-        .logo{
-            // border-radius: 100px;
-         
-           height: 100px;
-           width: 160px;
-           margin-top: 7px;
-           margin-bottom: 7px;
-           color: black;
-           
-           justify-self:center;
-           align-self: center;
-           transition: all 2s; 
-           &:hover{
-            transform: scale(1.1);
-            border-radius: 100px;}
+        
 
            
         nav{
-                align-self: center;
-
-              
-               
+                align-self: center; 
                
             }
 
          
-    }
+    
        
 
        
        
     h1{ 
-        transition: all 1s;
+        transition: all .6s;
         align-self: center;
         justify-content: center; 
         text-align: center;
@@ -182,6 +165,8 @@ body{
             flex-direction: row;
             margin-bottom: 17px;
             margin-top: 2rem;
+            animation: zoomIn;
+            animation-duration: 1s;
             
             .div__img1{
                 display: flex;
@@ -499,7 +484,8 @@ body{
             display: flex;
             flex-direction: column;
             margin: 0%;
-            margin-bottom: 10rem;
+            margin-bottom: 7rem;
+            margin-top: 2rem;
 
             .div_img2{
                 flex-direction: column;
@@ -540,6 +526,7 @@ body{
     //  MOBILE NOSOTROS
         .nosotros{
             margin-top: 0px;
+            margin-bottom: 0px;
                     .div__imgN{
                         margin-bottom: 50px;
                         .img__n{
