@@ -72,7 +72,7 @@ body {
     border-color: beige;
     border-style: groove;
     transition: all 1s;
-    background-color: #594D43; }
+    background-color: #262626; }
     body header .logo {
       height: 100px;
       width: 160px;
@@ -97,7 +97,7 @@ body {
       justify-self: center;
       padding: 1rem; }
       body header h1:hover {
-        color: #262626; }
+        color: #736758; }
   body footer {
     border-top: 3px;
     border-bottom: 0px;
@@ -117,7 +117,7 @@ body {
         body footer ul li i {
           height: 50px;
           width: 50px;
-          background-color: #262626;
+          background-color: #736758;
           font-size: 20px;
           border-radius: 10px;
           text-align: center;
@@ -146,9 +146,8 @@ body {
       border: 5px;
       border-style: groove;
       border-radius: 15px;
-      color: #F2F2F2;
       transition: all 2s;
-      background-color: #262626;
+      background-color: #736758;
       margin-top: 3rem;
       margin-bottom: 3rem; }
   body .sec__servicios {
@@ -196,10 +195,10 @@ body {
       padding-bottom: 20px;
       border-radius: 70px;
       align-self: flex-end;
-      background-color: #262626;
+      background-color: #736758;
       overflow: hidden;
       text-align: justify;
-      color: #F2F2F2; }
+      color: black; }
   body .sec_capacitaciones {
     display: flex;
     padding: 15px;
@@ -229,13 +228,12 @@ body {
       body .sec_capacitaciones .capacitaciones p {
         font-family: 'Poppins', sans-serif;
         border-radius: 50px;
-        background-color: #262626;
+        background-color: #736758;
         width: 20rem;
         padding: 1rem;
         text-align: center;
         margin-top: 1rem;
-        margin-bottom: 1rem;
-        color: #F2F2F2; }
+        margin-bottom: 1rem; }
   body .sec__nosotros {
     margin: 20px;
     margin-top: 3rem;
@@ -257,12 +255,11 @@ body {
           transform: scale(1.1);
           border-radius: 100px; }
       body .sec__nosotros .nosotros .div__imgN .p_nosotros {
-        background-color: #262626;
+        background-color: #736758;
         border-radius: 60px;
         font-family: 'Poppins', sans-serif;
         margin-top: 2rem;
-        margin-bottom: 2rem;
-        color: #F2F2F2; }
+        margin-bottom: 2rem; }
         body .sec__nosotros .nosotros .div__imgN .p_nosotros ul {
           list-style-type: none;
           margin: 0px;
