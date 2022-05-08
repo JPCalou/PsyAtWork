@@ -55,7 +55,7 @@ body{
         justify-content: center; 
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        color: black;
+        color: $body;
         justify-self: center;
         padding: 1rem;
        
@@ -152,7 +152,7 @@ body{
                 justify-self: center;
                 align-self: center;
                 text-align: center;
-                
+                color: $body;
                 width: 700px; 
                 border: 5px;
                 border-style: groove;
@@ -181,6 +181,7 @@ body{
             display: flex;
             flex-direction: row;
             margin-bottom: 17px;
+            margin-top: 2rem;
             
             .div__img1{
                 display: flex;
@@ -233,7 +234,7 @@ body{
             background-color: $parrafos;
             overflow: hidden;
             text-align: justify;
-            color: black;
+            color: $body;
             
     
         }
@@ -287,6 +288,7 @@ body{
                 text-align: center;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
+                color: $body;
                 
             }
         }
@@ -344,6 +346,7 @@ body{
                        padding: 15px;
                        text-align: center;
                        font-family: 'Poppins', sans-serif;
+                       color: $body;
                        
                        
                    }
