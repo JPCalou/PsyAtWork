@@ -14,8 +14,7 @@ body{
         border-top: 0px;
         border-left: 5px;
         border-right: 0px;
-        border-color: beige;
-        border-style: groove; 
+         
         transition: all 1s;
         background-color: $header;
         
@@ -319,8 +318,8 @@ body{
 
                 .img__n{
                    @extend .img1;
-                   height: 250px;
-                   width: 215px;
+                   height: 245px;
+                   width: 220px;
                    margin-bottom: 1rem;
                    border-radius: 100px;
                    align-self: center;
@@ -397,7 +396,8 @@ body{
     
 
      header{
-        
+        margin: 0px;
+        padding: 0px;
         
 
          .logo{
@@ -415,6 +415,7 @@ body{
             justify-self: center;
             font-size: 28px;
             align-self: center;
+            padding: 2rem;
         }
      }
      

@@ -69,8 +69,6 @@ body {
     border-top: 0px;
     border-left: 5px;
     border-right: 0px;
-    border-color: beige;
-    border-style: groove;
     transition: all 1s;
     background-color: #262626; }
     body header .logo {
@@ -245,8 +243,8 @@ body {
       align-items: center;
       transition: all 2s; }
       body .sec__nosotros .nosotros .div__imgN .img__n {
-        height: 250px;
-        width: 215px;
+        height: 245px;
+        width: 220px;
         margin-bottom: 1rem;
         border-radius: 100px;
         align-self: center;
@@ -291,19 +289,23 @@ body {
     /* Mobile index */
     /*mobile servicios*/
     /* Media contactos */ }
-    body header .logo {
-      height: 81px;
-      width: 86px;
-      justify-self: center;
-      align-self: center;
-      margin-top: 20px;
-      margin-left: 10px; }
-    body header h1 {
-      height: 35px;
-      width: 100px;
-      justify-self: center;
-      font-size: 28px;
-      align-self: center; }
+    body header {
+      margin: 0px;
+      padding: 0px; }
+      body header .logo {
+        height: 81px;
+        width: 86px;
+        justify-self: center;
+        align-self: center;
+        margin-top: 20px;
+        margin-left: 10px; }
+      body header h1 {
+        height: 35px;
+        width: 100px;
+        justify-self: center;
+        font-size: 28px;
+        align-self: center;
+        padding: 2rem; }
     body footer {
       justify-content: flex-start;
       text-align: start; }
