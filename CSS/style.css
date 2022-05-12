@@ -72,17 +72,8 @@ body {
     transition: all 1s;
     background-color: #262626; }
     body header .logo {
-      height: 100px;
-      width: 160px;
-      margin-top: 7px;
-      margin-bottom: 7px;
-      color: black;
-      justify-self: center;
-      align-self: center;
-      transition: all 2s; }
-      body header .logo:hover {
-        transform: scale(1.1);
-        border-radius: 100px; }
+      height: 40px;
+      width: 40px; }
       body header .logo nav {
         align-self: center; }
     body header h1 {
